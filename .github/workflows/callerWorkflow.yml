@@ -5,7 +5,7 @@ on:
 
 jobs:
   call-workflow-1-in-local-repo:
-    uses:  Tech-it-or-live-it-Secure-CICD/centralWorkflows/.github/workflows/centralTEST.yml@main
+    uses: Tech-it-or-live-it-Secure-CICD/centralWorkflows/.github/workflows/centralTEST.yml@main
     with:
       token: ${{ secrets.GH_TOKEN }}
 
