@@ -9,7 +9,7 @@ jobs:
     uses: Tech-it-or-live-it-Secure-CICD/centralWorkflows/.github/workflows/centralTEST.yml@main
     #uses: github.repository_owner/centralWorkflows/.github/workflows/centralTEST.yml@main
     with:
-      secret: ${{ secret.GH_TOKEN }}
+      token: ${{ secrets.GH_TOKEN }}
 
 
 
