@@ -1,6 +1,7 @@
+name: calling_workflow
 on:
   workflow_call:
 
 jobs:
   call-workflow-1-in-local-repo:
-    uses: ${{ github.repository_owner }}/centralWorkflows/.github/workflows/centralTEST.yml@main
+    uses: github.repository_owner/centralWorkflows/.github/workflows/centralTEST.yml@main
