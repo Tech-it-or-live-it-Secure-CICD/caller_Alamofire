@@ -5,7 +5,7 @@ on:
 
 jobs:
   call-workflow-1-in-local-repo:
-    uses: /centralWorkflows/.github/workflows/centralTEST.yml@main
+    uses: ./centralWorkflows/.github/workflows/centralTEST.yml@main
     with:
       orgName: ${{ github.repository_owner }}
 
