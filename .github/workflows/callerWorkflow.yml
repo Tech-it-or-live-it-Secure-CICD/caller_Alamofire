@@ -5,4 +5,6 @@ on:
 
 jobs:
   call-workflow-1-in-local-repo:
-    uses: github.repository_owner/centralWorkflows/.github/workflows/centralTEST.yml@main
+    #uses: github.repository_owner/centralWorkflows/.github/workflows/centralTEST.yml@main
+    uses: ./centralWorkflows/.github/workflows/centralTEST.yml
+    #uses: github.repository_owner/centralWorkflows/.github/workflows/centralTEST.yml@main
