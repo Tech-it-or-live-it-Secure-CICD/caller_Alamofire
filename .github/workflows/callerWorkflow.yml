@@ -12,7 +12,7 @@ jobs:
    steps:
    - run: |
         curl https://raw.githubusercontent.com/Tech-it-or-live-it-Secure-CICD/centralWorkflows/main/engagementIDs.json > test.json
-        echo "ID= $(jq '.${{ github.repository_owner }}.main.anchoreID' test.json)"
+        echo "ID= $(jq '.${{ github.repository }}.${{ github.ref_name }}.anchoreID' test.json)"
 
         
 
