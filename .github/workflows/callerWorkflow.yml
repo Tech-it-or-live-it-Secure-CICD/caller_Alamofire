@@ -5,11 +5,13 @@ on:
 
 jobs:
   call-workflow-1-in-local-repo:
-    runs-on: ubuntu-latest
-    steps:
-    - name: test
       uses: Tech-it-or-live-it-Secure-CICD/centralWorkflows/.github/workflows/centralTEST.yml@main
-      #secrets: inherit
+      secrets: inherit
+  retrieveID:
+   runs-on: ubuntu-latest
+   steps:
+   - run: echo "ID= $(jq '.repoNAME2.branchNAME2.anchoreID' Tech-it-or-live-it-Secure-CICD/centralWorkflows/engagementIDs.json)"
+
         
 
 
