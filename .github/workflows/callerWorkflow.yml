@@ -10,7 +10,9 @@ jobs:
   retrieveID:
    runs-on: ubuntu-latest
    steps:
-   - run: echo "ID= $(jq '.repoNAME2.branchNAME2.anchoreID' Tech-it-or-live-it-Secure-CICD/centralWorkflows/engagementIDs.json)"
+   - run: |
+        curl https://raw.githubusercontent.com/Tech-it-or-live-it-Secure-CICD/centralWorkflows/main/engagementIDs.json > test.json
+        echo "ID= $(jq '.repoNAME2.branchNAME2.anchoreID' test.json)"
 
         
 
