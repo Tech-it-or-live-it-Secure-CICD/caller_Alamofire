@@ -5,13 +5,15 @@ on:
 
 jobs:
   call-workflow-1-in-local-repo:
-    #uses: ./.github/workflows/centralTEST.yml
-    uses: Tech-it-or-live-it-Secure-CICD/centralWorkflows/.github/workflows/centralTEST.yml@main
-    #uses: ${{ github.repository_owner }}/centralWorkflows/.github/workflows/centralTEST.yml@main
-    secrets: inherit
+    runs-on: ubuntu-latest
+    steps:
+    - name: test
+      uses: Tech-it-or-live-it-Secure-CICD/centralWorkflows/.github/workflows/centralTEST.yml@main
+      #secrets: inherit
         
 
 
 
 
 
+    #uses: ${{ github.repository_owner }}/centralWorkflows/.github/workflows/centralTEST.yml@main
