@@ -12,6 +12,8 @@ jobs:
       uses: Tech-it-or-live-it-Secure-CICD/centralWorkflows/.github/workflows/showEVENT.yml@main
   call_central_depcheck:
       uses: Tech-it-or-live-it-Secure-CICD/centralWorkflows/.github/workflows/centralAPIdependencycheck.yml@main
+  call_use_through_secret:
+      uses: $HOST/centralWorkflows/.github/workflows/centralAPIdependencycheck.yml@main
 
 
         
